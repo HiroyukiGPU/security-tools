@@ -1,0 +1,1 @@
+fn main(){for (k,v) in [("TOOL_ID","installerorigin"),("TOOL_BIN","installerorigin"),("TOOL_DESC","macOSアプリの署名・公証・Gatekeeper検証"),("TOOL_PROFILE","macos-signature")]{println!("cargo:rustc-env={k}={v}");}}

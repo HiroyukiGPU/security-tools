@@ -1,0 +1,15 @@
+[package]
+name="rulemutation"
+version="0.1.0"
+edition="2021"
+
+[dependencies]
+security-core={path="security-core"}
+
+[package.metadata]
+tool_bin="rulemutation"
+tool_desc="AI設定変更の検知とロールバック"
+tool_profile="ai-config"
+
+[workspace]
+members=["security-core"]

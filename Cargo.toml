@@ -1,0 +1,3 @@
+[workspace]
+resolver="2"
+members=["tools/agentmd-radar","tools/agentscope","tools/rulestamp","tools/rulemutation","tools/promptquarantine","tools/repoarrival-guard","tools/skillgate","tools/mcp-endpoint-lock","tools/toolcall-firewall","tools/localmcp-shield","tools/skillpermission","tools/agentmemory-lock","tools/agentsandbox","tools/secretcurtain","tools/agentundo","tools/agentegress","tools/clipboardtrap","tools/terminalgate","tools/installerorigin","tools/launchagent-watch","tools/extensionscope","tools/postinstall-gate","tools/pythonboot-sentry","tools/packagetwin","tools/lockfile-freeze","tools/githook-guard","tools/workflowgate","tools/dockerprivilege-guard","tools/ideextension-guard","tools/shellconfig-lock","tools/incident-capsule"]

@@ -1,0 +1,15 @@
+[package]
+name="agentmemory-lock"
+version="0.1.0"
+edition="2021"
+
+[dependencies]
+security-core={path="security-core"}
+
+[package.metadata]
+tool_bin="agentmemory"
+tool_desc="AIメモリファイルの変更履歴と復元"
+tool_profile="integrity"
+
+[workspace]
+members=["security-core"]

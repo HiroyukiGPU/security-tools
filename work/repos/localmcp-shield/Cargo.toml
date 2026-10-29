@@ -1,0 +1,15 @@
+[package]
+name="localmcp-shield"
+version="0.1.0"
+edition="2021"
+
+[dependencies]
+security-core={path="security-core"}
+
+[package.metadata]
+tool_bin="localmcp"
+tool_desc="ローカルMCPサーバー設定と待受アドレスの監査"
+tool_profile="local-service"
+
+[workspace]
+members=["security-core"]

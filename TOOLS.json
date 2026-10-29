@@ -1,0 +1,188 @@
+[
+  {
+    "repository": "agentmd-radar",
+    "binary": "agentmd",
+    "title": "AI向け指示ファイルの探索、ルール検査、隔離と復元",
+    "profile": "agent-instructions"
+  },
+  {
+    "repository": "agentscope",
+    "binary": "agentscope",
+    "title": "AIエージェント起動前の作業場所と指示ファイル境界の検証",
+    "profile": "agent-instructions"
+  },
+  {
+    "repository": "rulestamp",
+    "binary": "rulestamp",
+    "title": "設定ファイルのSHA-256保護と履歴復元",
+    "profile": "integrity"
+  },
+  {
+    "repository": "rulemutation",
+    "binary": "rulemutation",
+    "title": "AI設定変更の検知とロールバック",
+    "profile": "ai-config"
+  },
+  {
+    "repository": "promptquarantine",
+    "binary": "promptquarantine",
+    "title": "プロンプトインジェクションの静的検査と隔離",
+    "profile": "prompt"
+  },
+  {
+    "repository": "repoarrival-guard",
+    "binary": "repoarrival",
+    "title": "リポジトリ展開後の実行ファイルとAI指示の検査",
+    "profile": "repository"
+  },
+  {
+    "repository": "skillgate",
+    "binary": "skillgate",
+    "title": "AIスキルの権限・スクリプト検査と承認管理",
+    "profile": "skill"
+  },
+  {
+    "repository": "mcp-endpoint-lock",
+    "binary": "mcplock",
+    "title": "MCP接続先設定の監視と許可リスト",
+    "profile": "mcp-config"
+  },
+  {
+    "repository": "toolcall-firewall",
+    "binary": "toolcallfw",
+    "title": "MCPツール呼び出しのポリシー検査と実行制御",
+    "profile": "tool-call"
+  },
+  {
+    "repository": "localmcp-shield",
+    "binary": "localmcp",
+    "title": "ローカルMCPサーバー設定と待受アドレスの監査",
+    "profile": "local-service"
+  },
+  {
+    "repository": "skillpermission",
+    "binary": "skillpermission",
+    "title": "スキル起動の作業場所制限と子プロセス制御",
+    "profile": "sandbox"
+  },
+  {
+    "repository": "agentmemory-lock",
+    "binary": "agentmemory",
+    "title": "AIメモリファイルの変更履歴と復元",
+    "profile": "integrity"
+  },
+  {
+    "repository": "agentsandbox",
+    "binary": "agentsandbox",
+    "title": "隔離ランタイムの利用可能性確認と制限付き起動",
+    "profile": "sandbox"
+  },
+  {
+    "repository": "secretcurtain",
+    "binary": "secretcurtain",
+    "title": "秘密らしい環境変数を除いた子プロセス起動",
+    "profile": "secrets"
+  },
+  {
+    "repository": "agentundo",
+    "binary": "agentundo",
+    "title": "作業ツリーのスナップショット・差分・復元",
+    "profile": "integrity"
+  },
+  {
+    "repository": "agentegress",
+    "binary": "agentegress",
+    "title": "許可ドメイン設定の管理とプロキシ環境の起動",
+    "profile": "egress"
+  },
+  {
+    "repository": "clipboardtrap",
+    "binary": "clipboardtrap",
+    "title": "クリップボードの危険コマンド検査",
+    "profile": "shell-command"
+  },
+  {
+    "repository": "terminalgate",
+    "binary": "terminalgate",
+    "title": "シェルコマンドの危険パターン検査と承認",
+    "profile": "shell-command"
+  },
+  {
+    "repository": "installerorigin",
+    "binary": "installerorigin",
+    "title": "macOSアプリの署名・公証・Gatekeeper検証",
+    "profile": "macos-signature"
+  },
+  {
+    "repository": "launchagent-watch",
+    "binary": "launchwatch",
+    "title": "ユーザーLaunchAgentsの監視と隔離",
+    "profile": "launch-agent"
+  },
+  {
+    "repository": "extensionscope",
+    "binary": "extensionscope",
+    "title": "Chromium拡張機能の権限監査",
+    "profile": "browser-extension"
+  },
+  {
+    "repository": "postinstall-gate",
+    "binary": "postinstallgate",
+    "title": "npm依存関係スクリプトの検査と安全なインストール",
+    "profile": "npm-lifecycle"
+  },
+  {
+    "repository": "pythonboot-sentry",
+    "binary": "pythonboot",
+    "title": "Python起動時の.pth/sitecustomize検査",
+    "profile": "python-startup"
+  },
+  {
+    "repository": "packagetwin",
+    "binary": "packagetwin",
+    "title": "依存パッケージ名と宣言の検査",
+    "profile": "package-name"
+  },
+  {
+    "repository": "lockfile-freeze",
+    "binary": "lockfreeze",
+    "title": "依存ロックファイルの承認済みハッシュ管理",
+    "profile": "lockfile"
+  },
+  {
+    "repository": "githook-guard",
+    "binary": "githookguard",
+    "title": "Git Hooksとcore.hooksPathの監査・隔離",
+    "profile": "git-hook"
+  },
+  {
+    "repository": "workflowgate",
+    "binary": "workflowgate",
+    "title": "GitHub Actions権限・外部Action参照の検査",
+    "profile": "workflow"
+  },
+  {
+    "repository": "dockerprivilege-guard",
+    "binary": "dockerpriv",
+    "title": "Docker Composeの特権・危険マウント監査",
+    "profile": "docker-compose"
+  },
+  {
+    "repository": "ideextension-guard",
+    "binary": "ideguard",
+    "title": "VS Code拡張機能ファイルの監視・信頼管理",
+    "profile": "vscode-extension"
+  },
+  {
+    "repository": "shellconfig-lock",
+    "binary": "shellconfiglock",
+    "title": "zsh設定ファイルの履歴監視と復元",
+    "profile": "shell-config"
+  },
+  {
+    "repository": "incident-capsule",
+    "binary": "incidentcapsule",
+    "title": "プロセス情報と証拠ハッシュの記録",
+    "profile": "incident"
+  }
+]

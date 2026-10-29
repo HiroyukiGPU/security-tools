@@ -1,0 +1,15 @@
+[package]
+name="toolcall-firewall"
+version="0.1.0"
+edition="2021"
+
+[dependencies]
+security-core={path="security-core"}
+
+[package.metadata]
+tool_bin="toolcallfw"
+tool_desc="MCPツール呼び出しのポリシー検査と実行制御"
+tool_profile="tool-call"
+
+[workspace]
+members=["security-core"]

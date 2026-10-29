@@ -1,0 +1,15 @@
+[package]
+name="secretcurtain"
+version="0.1.0"
+edition="2021"
+
+[dependencies]
+security-core={path="security-core"}
+
+[package.metadata]
+tool_bin="secretcurtain"
+tool_desc="秘密らしい環境変数を除いた子プロセス起動"
+tool_profile="secrets"
+
+[workspace]
+members=["security-core"]

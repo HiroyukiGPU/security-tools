@@ -1,0 +1,15 @@
+[package]
+name="skillpermission"
+version="0.1.0"
+edition="2021"
+
+[dependencies]
+security-core={path="security-core"}
+
+[package.metadata]
+tool_bin="skillpermission"
+tool_desc="スキル起動の作業場所制限と子プロセス制御"
+tool_profile="sandbox"
+
+[workspace]
+members=["security-core"]

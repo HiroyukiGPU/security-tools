@@ -1,0 +1,15 @@
+[package]
+name="packagetwin"
+version="0.1.0"
+edition="2021"
+
+[dependencies]
+security-core={path="security-core"}
+
+[package.metadata]
+tool_bin="packagetwin"
+tool_desc="依存パッケージ名と宣言の検査"
+tool_profile="package-name"
+
+[workspace]
+members=["security-core"]

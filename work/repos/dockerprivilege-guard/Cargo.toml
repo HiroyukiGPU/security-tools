@@ -1,0 +1,15 @@
+[package]
+name="dockerprivilege-guard"
+version="0.1.0"
+edition="2021"
+
+[dependencies]
+security-core={path="security-core"}
+
+[package.metadata]
+tool_bin="dockerpriv"
+tool_desc="Docker Composeの特権・危険マウント監査"
+tool_profile="docker-compose"
+
+[workspace]
+members=["security-core"]

@@ -1,0 +1,15 @@
+[package]
+name="agentmd-radar"
+version="0.1.0"
+edition="2021"
+
+[dependencies]
+security-core={path="security-core"}
+
+[package.metadata]
+tool_bin="agentmd"
+tool_desc="AI向け指示ファイルの探索、ルール検査、隔離と復元"
+tool_profile="agent-instructions"
+
+[workspace]
+members=["security-core"]

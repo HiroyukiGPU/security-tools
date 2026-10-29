@@ -1,0 +1,15 @@
+[package]
+name="mcp-endpoint-lock"
+version="0.1.0"
+edition="2021"
+
+[dependencies]
+security-core={path="security-core"}
+
+[package.metadata]
+tool_bin="mcplock"
+tool_desc="MCP接続先設定の監視と許可リスト"
+tool_profile="mcp-config"
+
+[workspace]
+members=["security-core"]

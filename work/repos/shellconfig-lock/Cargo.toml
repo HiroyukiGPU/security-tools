@@ -1,0 +1,15 @@
+[package]
+name="shellconfig-lock"
+version="0.1.0"
+edition="2021"
+
+[dependencies]
+security-core={path="security-core"}
+
+[package.metadata]
+tool_bin="shellconfiglock"
+tool_desc="zsh設定ファイルの履歴監視と復元"
+tool_profile="shell-config"
+
+[workspace]
+members=["security-core"]

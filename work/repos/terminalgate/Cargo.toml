@@ -1,0 +1,15 @@
+[package]
+name="terminalgate"
+version="0.1.0"
+edition="2021"
+
+[dependencies]
+security-core={path="security-core"}
+
+[package.metadata]
+tool_bin="terminalgate"
+tool_desc="シェルコマンドの危険パターン検査と承認"
+tool_profile="shell-command"
+
+[workspace]
+members=["security-core"]

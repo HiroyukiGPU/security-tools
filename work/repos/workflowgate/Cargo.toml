@@ -1,0 +1,15 @@
+[package]
+name="workflowgate"
+version="0.1.0"
+edition="2021"
+
+[dependencies]
+security-core={path="security-core"}
+
+[package.metadata]
+tool_bin="workflowgate"
+tool_desc="GitHub Actions権限・外部Action参照の検査"
+tool_profile="workflow"
+
+[workspace]
+members=["security-core"]

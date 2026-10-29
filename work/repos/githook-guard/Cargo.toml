@@ -1,0 +1,15 @@
+[package]
+name="githook-guard"
+version="0.1.0"
+edition="2021"
+
+[dependencies]
+security-core={path="security-core"}
+
+[package.metadata]
+tool_bin="githookguard"
+tool_desc="Git Hooksとcore.hooksPathの監査・隔離"
+tool_profile="git-hook"
+
+[workspace]
+members=["security-core"]

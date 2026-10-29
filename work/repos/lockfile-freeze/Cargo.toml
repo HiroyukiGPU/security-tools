@@ -1,0 +1,15 @@
+[package]
+name="lockfile-freeze"
+version="0.1.0"
+edition="2021"
+
+[dependencies]
+security-core={path="security-core"}
+
+[package.metadata]
+tool_bin="lockfreeze"
+tool_desc="依存ロックファイルの承認済みハッシュ管理"
+tool_profile="lockfile"
+
+[workspace]
+members=["security-core"]

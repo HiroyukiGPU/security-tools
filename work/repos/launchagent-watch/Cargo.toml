@@ -1,0 +1,15 @@
+[package]
+name="launchagent-watch"
+version="0.1.0"
+edition="2021"
+
+[dependencies]
+security-core={path="security-core"}
+
+[package.metadata]
+tool_bin="launchwatch"
+tool_desc="ユーザーLaunchAgentsの監視と隔離"
+tool_profile="launch-agent"
+
+[workspace]
+members=["security-core"]

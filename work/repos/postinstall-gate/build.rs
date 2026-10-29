@@ -1,0 +1,1 @@
+fn main(){for (k,v) in [("TOOL_ID","postinstall-gate"),("TOOL_BIN","postinstallgate"),("TOOL_DESC","npm依存関係スクリプトの検査と安全なインストール"),("TOOL_PROFILE","npm-lifecycle")]{println!("cargo:rustc-env={k}={v}");}}

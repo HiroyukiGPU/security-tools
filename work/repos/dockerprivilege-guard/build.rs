@@ -1,0 +1,1 @@
+fn main(){for (k,v) in [("TOOL_ID","dockerprivilege-guard"),("TOOL_BIN","dockerpriv"),("TOOL_DESC","Docker Composeの特権・危険マウント監査"),("TOOL_PROFILE","docker-compose")]{println!("cargo:rustc-env={k}={v}");}}

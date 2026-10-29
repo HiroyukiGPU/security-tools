@@ -1,0 +1,15 @@
+[package]
+name="agentundo"
+version="0.1.0"
+edition="2021"
+
+[dependencies]
+security-core={path="security-core"}
+
+[package.metadata]
+tool_bin="agentundo"
+tool_desc="作業ツリーのスナップショット・差分・復元"
+tool_profile="integrity"
+
+[workspace]
+members=["security-core"]

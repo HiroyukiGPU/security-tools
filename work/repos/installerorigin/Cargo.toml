@@ -1,0 +1,15 @@
+[package]
+name="installerorigin"
+version="0.1.0"
+edition="2021"
+
+[dependencies]
+security-core={path="security-core"}
+
+[package.metadata]
+tool_bin="installerorigin"
+tool_desc="macOSアプリの署名・公証・Gatekeeper検証"
+tool_profile="macos-signature"
+
+[workspace]
+members=["security-core"]

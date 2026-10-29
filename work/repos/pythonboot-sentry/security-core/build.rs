@@ -1,0 +1,1 @@
+fn main(){for (k,v) in [("TOOL_ID","pythonboot-sentry"),("TOOL_BIN","pythonboot"),("TOOL_DESC","Python起動時の.pth/sitecustomize検査"),("TOOL_PROFILE","python-startup")]{println!("cargo:rustc-env={k}={v}");}}

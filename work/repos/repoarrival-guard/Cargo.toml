@@ -1,0 +1,15 @@
+[package]
+name="repoarrival-guard"
+version="0.1.0"
+edition="2021"
+
+[dependencies]
+security-core={path="security-core"}
+
+[package.metadata]
+tool_bin="repoarrival"
+tool_desc="リポジトリ展開後の実行ファイルとAI指示の検査"
+tool_profile="repository"
+
+[workspace]
+members=["security-core"]

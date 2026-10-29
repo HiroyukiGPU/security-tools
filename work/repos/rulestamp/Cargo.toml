@@ -1,0 +1,15 @@
+[package]
+name="rulestamp"
+version="0.1.0"
+edition="2021"
+
+[dependencies]
+security-core={path="security-core"}
+
+[package.metadata]
+tool_bin="rulestamp"
+tool_desc="設定ファイルのSHA-256保護と履歴復元"
+tool_profile="integrity"
+
+[workspace]
+members=["security-core"]

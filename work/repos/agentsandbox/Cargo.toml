@@ -1,0 +1,15 @@
+[package]
+name="agentsandbox"
+version="0.1.0"
+edition="2021"
+
+[dependencies]
+security-core={path="security-core"}
+
+[package.metadata]
+tool_bin="agentsandbox"
+tool_desc="隔離ランタイムの利用可能性確認と制限付き起動"
+tool_profile="sandbox"
+
+[workspace]
+members=["security-core"]

@@ -1,0 +1,15 @@
+[package]
+name="incident-capsule"
+version="0.1.0"
+edition="2021"
+
+[dependencies]
+security-core={path="security-core"}
+
+[package.metadata]
+tool_bin="incidentcapsule"
+tool_desc="プロセス情報と証拠ハッシュの記録"
+tool_profile="incident"
+
+[workspace]
+members=["security-core"]

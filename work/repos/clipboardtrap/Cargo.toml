@@ -1,0 +1,15 @@
+[package]
+name="clipboardtrap"
+version="0.1.0"
+edition="2021"
+
+[dependencies]
+security-core={path="security-core"}
+
+[package.metadata]
+tool_bin="clipboardtrap"
+tool_desc="クリップボードの危険コマンド検査"
+tool_profile="shell-command"
+
+[workspace]
+members=["security-core"]

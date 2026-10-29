@@ -1,0 +1,15 @@
+[package]
+name="pythonboot-sentry"
+version="0.1.0"
+edition="2021"
+
+[dependencies]
+security-core={path="security-core"}
+
+[package.metadata]
+tool_bin="pythonboot"
+tool_desc="Python起動時の.pth/sitecustomize検査"
+tool_profile="python-startup"
+
+[workspace]
+members=["security-core"]

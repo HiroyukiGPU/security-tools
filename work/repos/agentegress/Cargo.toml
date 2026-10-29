@@ -1,0 +1,15 @@
+[package]
+name="agentegress"
+version="0.1.0"
+edition="2021"
+
+[dependencies]
+security-core={path="security-core"}
+
+[package.metadata]
+tool_bin="agentegress"
+tool_desc="許可ドメイン設定の管理とプロキシ環境の起動"
+tool_profile="egress"
+
+[workspace]
+members=["security-core"]

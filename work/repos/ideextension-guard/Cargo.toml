@@ -1,0 +1,15 @@
+[package]
+name="ideextension-guard"
+version="0.1.0"
+edition="2021"
+
+[dependencies]
+security-core={path="security-core"}
+
+[package.metadata]
+tool_bin="ideguard"
+tool_desc="VS Code拡張機能ファイルの監視・信頼管理"
+tool_profile="vscode-extension"
+
+[workspace]
+members=["security-core"]

@@ -1,0 +1,15 @@
+[package]
+name="postinstall-gate"
+version="0.1.0"
+edition="2021"
+
+[dependencies]
+security-core={path="security-core"}
+
+[package.metadata]
+tool_bin="postinstallgate"
+tool_desc="npm依存関係スクリプトの検査と安全なインストール"
+tool_profile="npm-lifecycle"
+
+[workspace]
+members=["security-core"]

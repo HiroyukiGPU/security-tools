@@ -1,0 +1,15 @@
+[package]
+name="skillgate"
+version="0.1.0"
+edition="2021"
+
+[dependencies]
+security-core={path="security-core"}
+
+[package.metadata]
+tool_bin="skillgate"
+tool_desc="AIスキルの権限・スクリプト検査と承認管理"
+tool_profile="skill"
+
+[workspace]
+members=["security-core"]
